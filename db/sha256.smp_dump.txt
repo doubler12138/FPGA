@@ -1,0 +1,6 @@
+
+State Machine - |sha256|state
+Name state.FINAL state.BUSY state.IDLE 
+state.IDLE 0 0 0 
+state.BUSY 0 1 1 
+state.FINAL 1 0 1 

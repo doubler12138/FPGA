@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/FPGA/sha256_3/simulation/qsim
+Esha256
+Z1 w1544021237
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 cD3@N^MdoDolN5@R6?T[V1
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 3BCIeZzdIHLCX<;R;K38G3
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 PQDYM9fR]Wek<A7X8bA8S1
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 >EJOc2K4@P4f?njWHdOcd0
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 14j`ZKHCzSI;]V?hmAE6_1
+R0
+Z11 8sha256.vho
+Z12 Fsha256.vho
+l0
+L39
+Ve^JY2?GVo6<<P`TzclBNT0
+!s100 ZTA[:DiihH;ek^`M7MYii2
+Z13 OV;C;10.5b;63
+32
+!s110 1544021238
+!i10b 1
+Z14 !s108 1544021238.000000
+Z15 !s90 -work|work|sha256.vho|
+Z16 !s107 sha256.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 6 sha256 0 22 e^JY2?GVo6<<P`TzclBNT0
+l12796
+L385
+VIgaTlU4YjSz@S?^L;@6go1
+!s100 0QXVE@7MHU<amR=J1H7>B1
+R13
+32
+!s110 1544021239
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Esha256_vhd_vec_tst
+Z19 w1544021233
+R8
+R9
+R0
+Z20 8Waveform2.vwf.vht
+Z21 FWaveform2.vwf.vht
+l0
+L32
+V:U:@eQMHf@O1KUR>8c[L<1
+!s100 OkbmJQQh9GH7Z714Gnem<1
+R13
+32
+Z22 !s110 1544021241
+!i10b 1
+Z23 !s108 1544021241.000000
+Z24 !s90 -work|work|Waveform2.vwf.vht|
+Z25 !s107 Waveform2.vwf.vht|
+!i113 1
+R17
+R18
+Asha256_arch
+R8
+R9
+Z26 DEx4 work 18 sha256_vhd_vec_tst 0 22 :U:@eQMHf@O1KUR>8c[L<1
+l59
+L34
+Ve]S=[L2FamGkmMT0cNmZ:0
+!s100 aeeBFz_l7zzInaX_7Kd?L0
+R13
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R17
+R18

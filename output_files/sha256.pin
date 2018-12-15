@@ -1,0 +1,1230 @@
+ -- Copyright (C) 2017  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel MegaCore Function License Agreement, or other 
+ -- applicable license agreement, including, without limitation, 
+ -- that your use is for the sole purpose of programming logic 
+ -- devices manufactured by Intel and sold by Intel or its 
+ -- authorized distributors.  Please refer to the applicable 
+ -- agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V, 3.0V or 3.3V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.1V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3A:       2.5V
+ --                  Bank 3B:       2.5V
+ --                  Bank 4A:       2.5V
+ --                  Bank 5A:       2.5V
+ --                  Bank 5B:       2.5V
+ --                  Bank 6A:  2.5V
+ --                  Bank 7A:  2.5V
+ --                  Bank 8A:  2.5V
+ --                  Bank 9A:  Dedicated configuration pins only, no VCCIO required.
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+CHIP  "sha256"  ASSIGNED TO AN: 5CGXFC9E7F35C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+hash_output[220]             : A2        : output : 2.5 V             :         : 8A        : N              
+hash_output[186]             : A3        : output : 2.5 V             :         : 8A        : N              
+GND                          : A4        : gnd    :                   :         :           :                
+hash_output[71]              : A5        : output : 2.5 V             :         : 8A        : N              
+hash_output[32]              : A6        : output : 2.5 V             :         : 8A        : N              
+hash_output[82]              : A7        : output : 2.5 V             :         : 8A        : N              
+hash_output[67]              : A8        : output : 2.5 V             :         : 8A        : N              
+GND                          : A9        : gnd    :                   :         :           :                
+hash_output[86]              : A10       : output : 2.5 V             :         : 8A        : N              
+hash_output[42]              : A11       : output : 2.5 V             :         : 8A        : N              
+word_input[19]               : A12       : input  : 2.5 V             :         : 8A        : N              
+hash_output[49]              : A13       : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : A14       : power  :                   : 2.5V    : 8A        :                
+hash_output[13]              : A15       : output : 2.5 V             :         : 8A        : N              
+word_input[4]                : A16       : input  : 2.5 V             :         : 8A        : N              
+hash_output[45]              : A17       : output : 2.5 V             :         : 8A        : N              
+hash_output[29]              : A18       : output : 2.5 V             :         : 8A        : N              
+GND                          : A19       : gnd    :                   :         :           :                
+hash_output[235]             : A20       : output : 2.5 V             :         : 7A        : N              
+hash_output[48]              : A21       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A22       :        :                   :         : 7A        :                
+hash_output[223]             : A23       : output : 2.5 V             :         : 7A        : N              
+VCCIO7A                      : A24       : power  :                   : 2.5V    : 7A        :                
+hash_output[131]             : A25       : output : 2.5 V             :         : 7A        : N              
+hash_output[106]             : A26       : output : 2.5 V             :         : 7A        : N              
+hash_output[92]              : A27       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A28       :        :                   :         : 7A        :                
+GND                          : A29       : gnd    :                   :         :           :                
+NC                           : A30       :        :                   :         :           :                
+NC                           : A31       :        :                   :         :           :                
+NC                           : A32       :        :                   :         :           :                
+NC                           : A33       :        :                   :         :           :                
+GND                          : AA1       :        :                   :         : B1L       :                
+GND                          : AA2       :        :                   :         : B1L       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+GND                          : AA6       : gnd    :                   :         :           :                
+VCCL_GXBL                    : AA7       : power  :                   : 1.1V    :           :                
+GND                          : AA8       : gnd    :                   :         :           :                
+VCCE_GXBL                    : AA9       : power  :                   : 1.1V    :           :                
+GND                          : AA10      : gnd    :                   :         :           :                
+GND                          : AA11      :        :                   :         : B0L       :                
+GND                          : AA12      : gnd    :                   :         :           :                
+VCC                          : AA13      : power  :                   : 1.1V    :           :                
+GND                          : AA14      : gnd    :                   :         :           :                
+hash_output[122]             : AA15      : output : 2.5 V             :         : 3A        : N              
+hash_output[31]              : AA16      : output : 2.5 V             :         : 3B        : N              
+word_input[16]               : AA17      : input  : 2.5 V             :         : 3B        : N              
+hash_output[47]              : AA18      : output : 2.5 V             :         : 3B        : N              
+GND                          : AA19      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA20      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 5A        :                
+debug_port[23]               : AA22      : output : 2.5 V             :         : 5A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA23      :        :                   :         : 5A        :                
+VCCIO5A                      : AA24      : power  :                   : 2.5V    : 5A        :                
+hash_output[111]             : AA25      : output : 2.5 V             :         : 5A        : N              
+VCCPD5A                      : AA26      : power  :                   : 2.5V    : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA27      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA28      :        :                   :         : 5A        :                
+GND                          : AA29      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA30      :        :                   :         : 5A        :                
+hash_output[118]             : AA31      : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA32      :        :                   :         : 5B        :                
+word_input[10]               : AA33      : input  : 2.5 V             :         : 6A        : N              
+GND                          : AA34      : gnd    :                   :         :           :                
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : B1L       :                
+GXB_NC                       : AB4       :        :                   :         : B1L       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+VCCH_GXBL                    : AB8       : power  :                   : 2.5V    :           :                
+GND                          : AB9       : gnd    :                   :         :           :                
+GND                          : AB10      :        :                   :         : B0L       :                
+GND                          : AB11      : gnd    :                   :         :           :                
+GND                          : AB12      : gnd    :                   :         :           :                
+hash_output[203]             : AB13      : output : 2.5 V             :         : 3A        : N              
+word_input[11]               : AB14      : input  : 2.5 V             :         : 3A        : N              
+hash_output[80]              : AB15      : output : 2.5 V             :         : 3A        : N              
+hash_output[90]              : AB16      : output : 2.5 V             :         : 3B        : N              
+VCCIO3B                      : AB17      : power  :                   : 2.5V    : 3B        :                
+hash_output[109]             : AB18      : output : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB19      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB20      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4A        :                
+GND                          : AB22      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5A        :                
+VCCPD5A                      : AB26      : power  :                   : 2.5V    : 5A        :                
+VCCIO5A                      : AB27      : power  :                   : 2.5V    : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB29      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB30      :        :                   :         : 5A        :                
+hash_output[195]             : AB31      : output : 2.5 V             :         : 5B        : N              
+GND                          : AB32      : gnd    :                   :         :           :                
+hash_output[234]             : AB33      : output : 2.5 V             :         : 5B        : N              
+hash_output[252]             : AB34      : output : 2.5 V             :         : 5B        : N              
+GND                          : AC1       :        :                   :         : B1L       :                
+GND                          : AC2       :        :                   :         : B1L       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+VCCL_GXBL                    : AC7       : power  :                   : 1.1V    :           :                
+GND                          : AC8       : gnd    :                   :         :           :                
+VCCE_GXBL                    : AC9       : power  :                   : 1.1V    :           :                
+GND                          : AC10      : gnd    :                   :         :           :                
+VCCA_FPLL                    : AC11      : power  :                   : 2.5V    :           :                
+hash_output[233]             : AC12      : output : 2.5 V             :         : 3A        : N              
+hash_output[253]             : AC13      : output : 2.5 V             :         : 3A        : N              
+debug_port[31]               : AC14      : output : 2.5 V             :         : 3A        : N              
+GND                          : AC15      : gnd    :                   :         :           :                
+hash_output[236]             : AC16      : output : 2.5 V             :         : 3B        : N              
+clk                          : AC17      : input  : 2.5 V             :         : 3B        : N              
+hash_output[5]               : AC18      : output : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC19      :        :                   :         : 4A        :                
+VCCIO4A                      : AC20      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC21      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC23      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5A        :                
+GND                          : AC25      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC26      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC27      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC28      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC29      :        :                   :         : 5A        :                
+VCCIO5B                      : AC30      : power  :                   : 2.5V    : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC31      :        :                   :         : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC32      :        :                   :         : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC33      :        :                   :         : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC34      :        :                   :         : 5B        :                
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+GXB_NC                       : AD3       :        :                   :         : B0L       :                
+GXB_NC                       : AD4       :        :                   :         : B0L       :                
+GND                          : AD5       : gnd    :                   :         :           :                
+GND                          : AD6       : gnd    :                   :         :           :                
+GND                          : AD7       : gnd    :                   :         :           :                
+VCCE_GXBL                    : AD8       : power  :                   : 1.1V    :           :                
+GND                          : AD9       : gnd    :                   :         :           :                
+GND                          : AD10      : gnd    :                   :         :           :                
+hash_output[147]             : AD11      : output : 2.5 V             :         : 3A        : N              
+hash_output[130]             : AD12      : output : 2.5 V             :         : 3A        : N              
+VCCIO3A                      : AD13      : power  :                   : 2.5V    : 3A        :                
+hash_output[194]             : AD14      : output : 2.5 V             :         : 3A        : N              
+hash_output[243]             : AD15      : output : 2.5 V             :         : 3A        : N              
+hash_output[63]              : AD16      : output : 2.5 V             :         : 3B        : N              
+word_address[1]              : AD17      : output : 2.5 V             :         : 3B        : N              
+GND                          : AD18      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD19      :        :                   :         : 4A        :                
+debug_port[25]               : AD20      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD21      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4A        :                
+VCCIO4A                      : AD23      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD24      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD25      :        :                   :         : 5A        :                
+VCCA_FPLL                    : AD26      : power  :                   : 2.5V    :           :                
+VCCPGM                       : AD27      : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+GND                          : AD28      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD29      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD30      :        :                   :         : 5B        :                
+hash_output[227]             : AD31      : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD32      :        :                   :         : 5B        :                
+VCCIO5B                      : AD33      : power  :                   : 2.5V    : 5B        :                
+word_input[13]               : AD34      : input  : 2.5 V             :         : 5B        : N              
+GND                          : AE1       :        :                   :         : B0L       :                
+GND                          : AE2       :        :                   :         : B0L       :                
+GND                          : AE3       : gnd    :                   :         :           :                
+GND                          : AE4       : gnd    :                   :         :           :                
+GND                          : AE5       : gnd    :                   :         :           :                
+GND                          : AE6       : gnd    :                   :         :           :                
+GND                          : AE7       : gnd    :                   :         :           :                
+GND                          : AE8       : gnd    :                   :         :           :                
+GND                          : AE9       : gnd    :                   :         :           :                
+TDI                          : AE10      : input  :                   :         : 3A        :                
+GND                          : AE11      : gnd    :                   :         :           :                
+VCC_AUX                      : AE12      : power  :                   : 2.5V    :           :                
+VCCPD3A                      : AE13      : power  :                   : 2.5V    : 3A        :                
+word_input[18]               : AE14      : input  : 2.5 V             :         : 3A        : N              
+VCCPD3A                      : AE15      : power  :                   : 2.5V    : 3A        :                
+VCCIO3B                      : AE16      : power  :                   : 2.5V    : 3B        :                
+VCCPD3B4A                    : AE17      : power  :                   : 2.5V    : 3B, 4A    :                
+VCC_AUX                      : AE18      : power  :                   : 2.5V    :           :                
+hash_output[41]              : AE19      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE20      :        :                   :         : 4A        :                
+GND                          : AE21      : gnd    :                   :         :           :                
+VCCPD3B4A                    : AE22      : power  :                   : 2.5V    : 3B, 4A    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4A        :                
+VCC_AUX                      : AE24      : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE25      :        :                   :         : 4A        :                
+VCCIO5A                      : AE26      : power  :                   : 2.5V    : 5A        :                
+VREFB5AN0                    : AE27      : power  :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE29      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE30      :        :                   :         : 5B        :                
+GND                          : AE31      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE32      :        :                   :         : 5B        :                
+hash_output[60]              : AE33      : output : 2.5 V             :         : 5B        : N              
+word_input[17]               : AE34      : input  : 2.5 V             :         : 5B        : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+GXB_NC                       : AF3       :        :                   :         : B0L       :                
+GXB_NC                       : AF4       :        :                   :         : B0L       :                
+GND                          : AF5       : gnd    :                   :         :           :                
+GND                          : AF6       : gnd    :                   :         :           :                
+GND                          : AF7       : gnd    :                   :         :           :                
+NC                           : AF8       :        :                   :         :           :                
+VCCIO3A                      : AF9       : power  :                   : 2.5V    : 3A        :                
+DCLK                         : AF10      :        :                   :         : 3A        :                
+TDO                          : AF11      : output :                   :         : 3A        :                
+VCCPGM                       : AF12      : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+hash_output[179]             : AF13      : output : 2.5 V             :         : 3A        : N              
+GND                          : AF14      : gnd    :                   :         :           :                
+VCCPD3B4A                    : AF15      : power  :                   : 2.5V    : 3B, 4A    :                
+VCCPD3B4A                    : AF16      : power  :                   : 2.5V    : 3B, 4A    :                
+DNU                          : AF17      :        :                   :         :           :                
+hash_output[184]             : AF18      : output : 2.5 V             :         : 4A        : N              
+VCCIO4A                      : AF19      : power  :                   : 2.5V    : 4A        :                
+VCCPD3B4A                    : AF20      : power  :                   : 2.5V    : 3B, 4A    :                
+VCCPD3B4A                    : AF21      : power  :                   : 2.5V    : 3B, 4A    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF22      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF23      :        :                   :         : 4A        :                
+GND                          : AF24      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF25      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF26      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF28      :        :                   :         : 5A        :                
+VCCIO5A                      : AF29      : power  :                   : 2.5V    : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF30      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF31      :        :                   :         : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF32      :        :                   :         : 5B        :                
+word_input[24]               : AF33      : input  : 2.5 V             :         : 5B        : N              
+GND                          : AF34      : gnd    :                   :         :           :                
+GND                          : AG1       :        :                   :         : B0L       :                
+GND                          : AG2       :        :                   :         : B0L       :                
+GND                          : AG3       : gnd    :                   :         :           :                
+GND                          : AG4       : gnd    :                   :         :           :                
+GND                          : AG5       : gnd    :                   :         :           :                
+GND                          : AG6       : gnd    :                   :         :           :                
+GND                          : AG7       : gnd    :                   :         :           :                
+NC                           : AG8       :        :                   :         :           :                
+DNU                          : AG9       :        :                   :         :           :                
+nCSO, DATA4                  : AG10      :        :                   :         : 3A        :                
+TMS                          : AG11      : input  :                   :         : 3A        :                
+VCCIO3A                      : AG12      : power  :                   : 2.5V    : 3A        :                
+hash_output[246]             : AG13      : output : 2.5 V             :         : 3A        : N              
+hash_output[215]             : AG14      : output : 2.5 V             :         : 3A        : N              
+hash_output[11]              : AG15      : output : 2.5 V             :         : 3B        : N              
+hash_output[65]              : AG16      : output : 2.5 V             :         : 3B        : N              
+GND                          : AG17      : gnd    :                   :         :           :                
+hash_output[171]             : AG18      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG19      :        :                   :         : 4A        :                
+VREFB4AN0                    : AG20      : power  :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG21      :        :                   :         : 4A        :                
+VCCIO4A                      : AG22      : power  :                   : 2.5V    : 4A        :                
+debug_port[18]               : AG23      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG24      :        :                   :         : 4A        :                
+debug_port[26]               : AG25      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4A        :                
+GND                          : AG27      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG28      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG29      :        :                   :         : 5A        :                
+debug_port[30]               : AG30      : output : 2.5 V             :         : 5A        : N              
+debug_port[22]               : AG31      : output : 2.5 V             :         : 5B        : N              
+VCCIO5B                      : AG32      : power  :                   : 2.5V    : 5B        :                
+hash_output[62]              : AG33      : output : 2.5 V             :         : 5B        : N              
+word_input[23]               : AG34      : input  : 2.5 V             :         : 5B        : N              
+GND                          : AH1       : gnd    :                   :         :           :                
+GND                          : AH2       : gnd    :                   :         :           :                
+GXB_NC                       : AH3       :        :                   :         : B0L       :                
+GXB_NC                       : AH4       :        :                   :         : B0L       :                
+GND                          : AH5       : gnd    :                   :         :           :                
+NC                           : AH6       :        :                   :         :           :                
+NC                           : AH7       :        :                   :         :           :                
+AS_DATA2, DATA2              : AH8       :        :                   :         : 3A        :                
+AS_DATA0, ASDO, DATA0        : AH9       :        :                   :         : 3A        :                
+GND                          : AH10      : gnd    :                   :         :           :                
+VREFB3AN0                    : AH11      : power  :                   :         : 3A        :                
+hash_output[139]             : AH12      : output : 2.5 V             :         : 3A        : N              
+debug_port[11]               : AH13      : output : 2.5 V             :         : 3A        : N              
+hash_output[231]             : AH14      : output : 2.5 V             :         : 3A        : N              
+VCCIO3B                      : AH15      : power  :                   : 2.5V    : 3B        :                
+hash_output[84]              : AH16      : output : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH17      :        :                   :         : 3B        :                
+VREFB3BN0                    : AH18      : power  :                   :         : 3B        :                
+debug_port[21]               : AH19      : output : 2.5 V             :         : 4A        : N              
+GND                          : AH20      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH21      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH22      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH23      :        :                   :         : 4A        :                
+debug_port[1]                : AH24      : output : 2.5 V             :         : 4A        : N              
+VCCIO4A                      : AH25      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4A        :                
+debug_port[24]               : AH27      : output : 2.5 V             :         : 4A        : N              
+hash_output[250]             : AH28      : output : 2.5 V             :         : 5A        : N              
+hash_output[255]             : AH29      : output : 2.5 V             :         : 5A        : N              
+GND                          : AH30      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH31      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH32      :        :                   :         : 5B        :                
+word_input[1]                : AH33      : input  : 2.5 V             :         : 5B        : N              
+word_input[2]                : AH34      : input  : 2.5 V             :         : 5B        : N              
+GND                          : AJ1       :        :                   :         : B0L       :                
+GND                          : AJ2       :        :                   :         : B0L       :                
+GND                          : AJ3       : gnd    :                   :         :           :                
+GND                          : AJ4       : gnd    :                   :         :           :                
+GND                          : AJ5       : gnd    :                   :         :           :                
+AS_DATA3, DATA3              : AJ6       :        :                   :         : 3A        :                
+AS_DATA1, DATA1              : AJ7       :        :                   :         : 3A        :                
+VCCIO3A                      : AJ8       : power  :                   : 2.5V    : 3A        :                
+hash_output[133]             : AJ9       : output : 2.5 V             :         : 3A        : N              
+hash_output[240]             : AJ10      : output : 2.5 V             :         : 3A        : N              
+hash_output[149]             : AJ11      : output : 2.5 V             :         : 3A        : N              
+word_input[30]               : AJ12      : input  : 2.5 V             :         : 3A        : N              
+GND                          : AJ13      : gnd    :                   :         :           :                
+enable                       : AJ14      : input  : 2.5 V             :         : 3A        : N              
+hash_output[241]             : AJ15      : output : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ16      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ17      :        :                   :         : 3B        :                
+VCCIO4A                      : AJ18      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ19      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ20      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ21      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ22      :        :                   :         : 4A        :                
+GND                          : AJ23      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ24      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ25      :        :                   :         : 4A        :                
+debug_port[27]               : AJ26      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ27      :        :                   :         : 4A        :                
+VCCIO4A                      : AJ28      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ29      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ30      :        :                   :         : 5A        :                
+hash_output[8]               : AJ31      : output : 2.5 V             :         : 5A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ32      :        :                   :         : 5B        :                
+GND                          : AJ33      : gnd    :                   :         :           :                
+hash_output[238]             : AJ34      : output : 2.5 V             :         : 5B        : N              
+GND                          : AK1       : gnd    :                   :         :           :                
+GND                          : AK2       : gnd    :                   :         :           :                
+GND                          : AK3       : gnd    :                   :         :           :                
+NC                           : AK4       :        :                   :         :           :                
+TCK                          : AK5       : input  :                   :         : 3A        :                
+GND                          : AK6       : gnd    :                   :         :           :                
+hash_output[160]             : AK7       : output : 2.5 V             :         : 3A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK8       :        :                   :         : 3A        :                
+word_input[21]               : AK9       : input  : 2.5 V             :         : 3A        : N              
+hash_output[247]             : AK10      : output : 2.5 V             :         : 3A        : N              
+VCCIO3A                      : AK11      : power  :                   : 2.5V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK12      :        :                   :         : 3A        :                
+word_input[26]               : AK13      : input  : 2.5 V             :         : 3A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK14      :        :                   :         : 3A        :                
+debug_port[13]               : AK15      : output : 2.5 V             :         : 3B        : N              
+GND                          : AK16      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK17      :        :                   :         : 3B        :                
+hash_output[136]             : AK18      : output : 2.5 V             :         : 3B        : N              
+hash_output[170]             : AK19      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK20      :        :                   :         : 4A        :                
+VCCIO4A                      : AK21      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK22      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK23      :        :                   :         : 4A        :                
+debug_port[8]                : AK24      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK25      :        :                   :         : 4A        :                
+GND                          : AK26      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK27      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK28      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK29      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK30      :        :                   :         : 5A        :                
+VCCIO5A                      : AK31      : power  :                   : 2.5V    : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK32      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK33      :        :                   :         : 5A        :                
+hash_output[219]             : AK34      : output : 2.5 V             :         : 5B        : N              
+NC                           : AL1       :        :                   :         :           :                
+NC                           : AL2       :        :                   :         :           :                
+NC                           : AL3       :        :                   :         :           :                
+NC                           : AL4       :        :                   :         :           :                
+GND                          : AL5       : gnd    :                   :         :           :                
+hash_output[249]             : AL6       : output : 2.5 V             :         : 3A        : N              
+hash_output[239]             : AL7       : output : 2.5 V             :         : 3A        : N              
+hash_output[224]             : AL8       : output : 2.5 V             :         : 3A        : N              
+GND                          : AL9       : gnd    :                   :         :           :                
+word_address[3]              : AL10      : output : 2.5 V             :         : 3A        : N              
+hash_output[192]             : AL11      : output : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL12      :        :                   :         : 3B        :                
+hash_output[83]              : AL13      : output : 2.5 V             :         : 3B        : N              
+VCCIO3B                      : AL14      : power  :                   : 2.5V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL15      :        :                   :         : 3B        :                
+hash_output[79]              : AL16      : output : 2.5 V             :         : 3B        : N              
+hash_output[117]             : AL17      : output : 2.5 V             :         : 3B        : N              
+hash_output[214]             : AL18      : output : 2.5 V             :         : 3B        : N              
+GND                          : AL19      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL20      :        :                   :         : 4A        :                
+hash_output[167]             : AL21      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL22      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL23      :        :                   :         : 4A        :                
+VCCIO4A                      : AL24      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL25      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL26      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL27      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL28      :        :                   :         : 4A        :                
+GND                          : AL29      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL30      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL31      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL32      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL33      :        :                   :         : 5A        :                
+GND                          : AL34      : gnd    :                   :         :           :                
+NC                           : AM1       :        :                   :         :           :                
+NC                           : AM2       :        :                   :         :           :                
+GND                          : AM3       : gnd    :                   :         :           :                
+hash_output[245]             : AM4       : output : 2.5 V             :         : 3A        : N              
+hash_output[164]             : AM5       : output : 2.5 V             :         : 3A        : N              
+word_input[29]               : AM6       : input  : 2.5 V             :         : 3A        : N              
+VCCIO3A                      : AM7       : power  :                   : 2.5V    : 3A        :                
+hash_output[172]             : AM8       : output : 2.5 V             :         : 3A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM9       :        :                   :         : 3A        :                
+word_input[5]                : AM10      : input  : 2.5 V             :         : 3A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM11      :        :                   :         : 3B        :                
+GND                          : AM12      : gnd    :                   :         :           :                
+debug_port[5]                : AM13      : output : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM14      :        :                   :         : 3B        :                
+word_input[8]                : AM15      : input  : 2.5 V             :         : 3B        : N              
+hash_output[112]             : AM16      : output : 2.5 V             :         : 3B        : N              
+VCCIO3B                      : AM17      : power  :                   : 2.5V    : 3B        :                
+hash_output[77]              : AM18      : output : 2.5 V             :         : 3B        : N              
+debug_port[12]               : AM19      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM20      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM21      :        :                   :         : 4A        :                
+GND                          : AM22      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM23      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM24      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM25      :        :                   :         : 4A        :                
+debug_port[4]                : AM26      : output : 2.5 V             :         : 4A        : N              
+VCCIO4A                      : AM27      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM28      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM29      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM30      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM31      :        :                   :         : 4A        :                
+GND                          : AM32      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM33      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM34      :        :                   :         : 5B        :                
+NC                           : AN1       :        :                   :         :           :                
+NC                           : AN2       :        :                   :         :           :                
+NC                           : AN3       :        :                   :         :           :                
+word_input[27]               : AN4       : input  : 2.5 V             :         : 3A        : N              
+hash_output[163]             : AN5       : output : 2.5 V             :         : 3A        : N              
+GND                          : AN6       : gnd    :                   :         :           :                
+word_input[20]               : AN7       : input  : 2.5 V             :         : 3A        : N              
+word_input[9]                : AN8       : input  : 2.5 V             :         : 3A        : N              
+ready                        : AN9       : output : 2.5 V             :         : 3A        : N              
+VCCIO3B                      : AN10      : power  :                   : 2.5V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN11      :        :                   :         : 3B        :                
+debug_port[7]                : AN12      : output : 2.5 V             :         : 3B        : N              
+hash_output[18]              : AN13      : output : 2.5 V             :         : 3B        : N              
+hash_output[16]              : AN14      : output : 2.5 V             :         : 3B        : N              
+GND                          : AN15      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN16      :        :                   :         : 3B        :                
+hash_output[46]              : AN17      : output : 2.5 V             :         : 3B        : N              
+hash_output[55]              : AN18      : output : 2.5 V             :         : 3B        : N              
+debug_port[15]               : AN19      : output : 2.5 V             :         : 4A        : N              
+VCCIO4A                      : AN20      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN21      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN22      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN23      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN24      :        :                   :         : 4A        :                
+GND                          : AN25      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN26      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN27      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN28      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN29      :        :                   :         : 4A        :                
+VCCIO4A                      : AN30      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN31      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN32      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN33      :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN34      :        :                   :         : 5B        :                
+GND                          : AP2       : gnd    :                   :         :           :                
+NC                           : AP3       :        :                   :         :           :                
+GND                          : AP4       : gnd    :                   :         :           :                
+word_address[2]              : AP5       : output : 2.5 V             :         : 3A        : N              
+hash_output[129]             : AP6       : output : 2.5 V             :         : 3A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP7       :        :                   :         : 3A        :                
+GND                          : AP8       : gnd    :                   :         :           :                
+word_address[0]              : AP9       : output : 2.5 V             :         : 3B        : N              
+hash_output[124]             : AP10      : output : 2.5 V             :         : 3B        : N              
+hash_output[25]              : AP11      : output : 2.5 V             :         : 3B        : N              
+word_input[7]                : AP12      : input  : 2.5 V             :         : 3B        : N              
+GND                          : AP13      : gnd    :                   :         :           :                
+hash_output[104]             : AP14      : output : 2.5 V             :         : 3B        : N              
+debug_port[10]               : AP15      : output : 2.5 V             :         : 3B        : N              
+hash_output[6]               : AP16      : output : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP17      :        :                   :         : 3B        :                
+GND                          : AP18      : gnd    :                   :         :           :                
+hash_output[204]             : AP19      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP20      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP21      :        :                   :         : 4A        :                
+hash_output[120]             : AP22      : output : 2.5 V             :         : 4A        : N              
+GND                          : AP23      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP24      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP25      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP26      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP27      :        :                   :         : 4A        :                
+GND                          : AP28      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP29      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP30      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP31      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP32      :        :                   :         : 4A        :                
+GND                          : AP33      : gnd    :                   :         :           :                
+hash_output[182]             : B1        : output : 2.5 V             :         : 8A        : N              
+GND                          : B2        : gnd    :                   :         :           :                
+hash_output[196]             : B3        : output : 2.5 V             :         : 8A        : N              
+hash_output[206]             : B4        : output : 2.5 V             :         : 8A        : N              
+hash_output[101]             : B5        : output : 2.5 V             :         : 8A        : N              
+hash_output[108]             : B6        : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : B7        : power  :                   : 2.5V    : 8A        :                
+hash_output[187]             : B8        : output : 2.5 V             :         : 8A        : N              
+hash_output[38]              : B9        : output : 2.5 V             :         : 8A        : N              
+hash_output[50]              : B10       : output : 2.5 V             :         : 8A        : N              
+hash_output[78]              : B11       : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : B12       : power  :                   : 2.5V    : 8A        :                
+hash_output[87]              : B13       : output : 2.5 V             :         : 8A        : N              
+hash_output[27]              : B14       : output : 2.5 V             :         : 8A        : N              
+hash_output[57]              : B15       : output : 2.5 V             :         : 8A        : N              
+hash_output[2]               : B16       : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : B17       : power  :                   : 2.5V    : 8A        :                
+hash_output[72]              : B18       : output : 2.5 V             :         : 8A        : N              
+hash_output[208]             : B19       : output : 2.5 V             :         : 7A        : N              
+hash_output[198]             : B20       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 7A        :                
+GND                          : B22       : gnd    :                   :         :           :                
+hash_output[19]              : B23       : output : 2.5 V             :         : 7A        : N              
+hash_output[69]              : B24       : output : 2.5 V             :         : 7A        : N              
+hash_output[74]              : B25       : output : 2.5 V             :         : 7A        : N              
+hash_output[24]              : B26       : output : 2.5 V             :         : 7A        : N              
+VCCIO7A                      : B27       : power  :                   : 2.5V    : 7A        :                
+debug_port[16]               : B28       : output : 2.5 V             :         : 7A        : N              
+debug_port[3]                : B29       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B30       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B31       :        :                   :         : 7A        :                
+GND                          : B32       : gnd    :                   :         :           :                
+NC                           : B33       :        :                   :         :           :                
+GND                          : B34       : gnd    :                   :         :           :                
+hash_output[169]             : C1        : output : 2.5 V             :         : 8A        : N              
+NC                           : C2        :        :                   :         :           :                
+GND                          : C3        : gnd    :                   :         :           :                
+GND                          : C4        : gnd    :                   :         :           :                
+GND                          : C5        : gnd    :                   :         :           :                
+hash_output[105]             : C6        : output : 2.5 V             :         : 8A        : N              
+hash_output[178]             : C7        : output : 2.5 V             :         : 8A        : N              
+hash_output[212]             : C8        : output : 2.5 V             :         : 8A        : N              
+hash_output[9]               : C9        : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : C10       : power  :                   : 2.5V    : 8A        :                
+hash_output[213]             : C11       : output : 2.5 V             :         : 8A        : N              
+hash_output[76]              : C12       : output : 2.5 V             :         : 8A        : N              
+hash_output[98]              : C13       : output : 2.5 V             :         : 8A        : N              
+hash_output[191]             : C14       : output : 2.5 V             :         : 8A        : N              
+GND                          : C15       : gnd    :                   :         :           :                
+hash_output[197]             : C16       : output : 2.5 V             :         : 8A        : N              
+hash_output[207]             : C17       : output : 2.5 V             :         : 8A        : N              
+hash_output[96]              : C18       : output : 2.5 V             :         : 8A        : N              
+NC                           : C19       :        :                   :         :           :                
+VCCIO7A                      : C20       : power  :                   : 2.5V    : 7A        :                
+hash_output[237]             : C21       : output : 2.5 V             :         : 7A        : N              
+hash_output[64]              : C22       : output : 2.5 V             :         : 7A        : N              
+hash_output[53]              : C23       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C24       :        :                   :         : 7A        :                
+GND                          : C25       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 7A        :                
+hash_output[126]             : C27       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C28       :        :                   :         : 7A        :                
+hash_output[119]             : C29       : output : 2.5 V             :         : 7A        : N              
+VCCIO7A                      : C30       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C31       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C32       :        :                   :         : 7A        :                
+NC                           : C33       :        :                   :         :           :                
+NC                           : C34       :        :                   :         :           :                
+GND                          : D1        : gnd    :                   :         :           :                
+GND                          : D2        : gnd    :                   :         :           :                
+DNU                          : D3        :        :                   :         :           :                
+DNU                          : D4        :        :                   :         :           :                
+GND                          : D5        : gnd    :                   :         :           :                
+NC                           : D6        :        :                   :         :           :                
+hash_output[128]             : D7        : output : 2.5 V             :         : 8A        : N              
+GND                          : D8        : gnd    :                   :         :           :                
+hash_output[132]             : D9        : output : 2.5 V             :         : 8A        : N              
+hash_output[222]             : D10       : output : 2.5 V             :         : 8A        : N              
+hash_output[12]              : D11       : output : 2.5 V             :         : 8A        : N              
+hash_output[210]             : D12       : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : D13       : power  :                   : 2.5V    : 8A        :                
+hash_output[99]              : D14       : output : 2.5 V             :         : 8A        : N              
+hash_output[36]              : D15       : output : 2.5 V             :         : 8A        : N              
+hash_output[39]              : D16       : output : 2.5 V             :         : 8A        : N              
+hash_output[51]              : D17       : output : 2.5 V             :         : 8A        : N              
+GND                          : D18       : gnd    :                   :         :           :                
+hash_output[85]              : D19       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 7A        :                
+debug_port[0]                : D21       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 7A        :                
+VCCIO7A                      : D23       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D24       :        :                   :         : 7A        :                
+hash_output[144]             : D25       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 7A        :                
+GND                          : D28       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D29       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D30       :        :                   :         : 7A        :                
+NC                           : D31       :        :                   :         :           :                
+NC                           : D32       :        :                   :         :           :                
+GND                          : D33       : gnd    :                   :         :           :                
+NC                           : D34       :        :                   :         :           :                
+RREF                         : E1        :        :                   :         :           :                
+GND                          : E2        : gnd    :                   :         :           :                
+GND                          : E3        : gnd    :                   :         :           :                
+GND                          : E4        : gnd    :                   :         :           :                
+GND                          : E5        : gnd    :                   :         :           :                
+VCCIO8A                      : E6        : power  :                   : 2.5V    : 8A        :                
+hash_output[175]             : E7        : output : 2.5 V             :         : 8A        : N              
+hash_output[202]             : E8        : output : 2.5 V             :         : 8A        : N              
+hash_output[174]             : E9        : output : 2.5 V             :         : 8A        : N              
+hash_output[140]             : E10       : output : 2.5 V             :         : 8A        : N              
+GND                          : E11       : gnd    :                   :         :           :                
+hash_output[145]             : E12       : output : 2.5 V             :         : 8A        : N              
+hash_output[193]             : E13       : output : 2.5 V             :         : 8A        : N              
+hash_output[110]             : E14       : output : 2.5 V             :         : 8A        : N              
+hash_output[33]              : E15       : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : E16       : power  :                   : 2.5V    : 8A        :                
+hash_output[26]              : E17       : output : 2.5 V             :         : 8A        : N              
+hash_output[177]             : E18       : output : 2.5 V             :         : 8A        : N              
+hash_output[3]               : E19       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E20       :        :                   :         : 7A        :                
+GND                          : E21       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E23       :        :                   :         : 7A        :                
+hash_output[161]             : E24       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E25       :        :                   :         : 7A        :                
+VCCIO7A                      : E26       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E27       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E28       :        :                   :         : 7A        :                
+hash_output[248]             : E29       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E30       :        :                   :         : 7A        :                
+GND                          : E31       : gnd    :                   :         :           :                
+NC                           : E32       :        :                   :         :           :                
+NC                           : E33       :        :                   :         :           :                
+NC                           : E34       :        :                   :         :           :                
+GND                          : F1        : gnd    :                   :         :           :                
+GND                          : F2        : gnd    :                   :         :           :                
+GXB_NC                       : F3        :        :                   :         : B3L       :                
+GXB_NC                       : F4        :        :                   :         : B3L       :                
+GND                          : F5        : gnd    :                   :         :           :                
+MSEL2                        : F6        :        :                   :         : 9A        :                
+nCE                          : F7        :        :                   :         : 9A        :                
+hash_output[225]             : F8        : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : F9        : power  :                   : 2.5V    : 8A        :                
+hash_output[199]             : F10       : output : 2.5 V             :         : 8A        : N              
+hash_output[168]             : F11       : output : 2.5 V             :         : 8A        : N              
+hash_output[142]             : F12       : output : 2.5 V             :         : 8A        : N              
+hash_output[114]             : F13       : output : 2.5 V             :         : 8A        : N              
+GND                          : F14       : gnd    :                   :         :           :                
+hash_output[95]              : F15       : output : 2.5 V             :         : 8A        : N              
+hash_output[23]              : F16       : output : 2.5 V             :         : 8A        : N              
+hash_output[89]              : F17       : output : 2.5 V             :         : 8A        : N              
+hash_output[152]             : F18       : output : 2.5 V             :         : 8A        : N              
+VCCIO7A                      : F19       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F20       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 7A        :                
+hash_output[162]             : F22       : output : 2.5 V             :         : 7A        : N              
+debug_port[17]               : F23       : output : 2.5 V             :         : 7A        : N              
+GND                          : F24       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 7A        :                
+debug_port[9]                : F27       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 7A        :                
+VCCIO7A                      : F29       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F30       :        :                   :         : 7A        :                
+NC                           : F31       :        :                   :         :           :                
+NC                           : F32       :        :                   :         :           :                
+NC                           : F33       :        :                   :         :           :                
+GND                          : F34       : gnd    :                   :         :           :                
+GND                          : G1        :        :                   :         : B3L       :                
+GND                          : G2        :        :                   :         : B3L       :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+NC                           : G6        :        :                   :         :           :                
+GND                          : G7        : gnd    :                   :         :           :                
+nCONFIG                      : G8        :        :                   :         : 9A        :                
+nSTATUS                      : G9        :        :                   :         : 9A        :                
+CONF_DONE                    : G10       :        :                   :         : 9A        :                
+hash_output[159]             : G11       : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : G12       : power  :                   : 2.5V    : 8A        :                
+hash_output[150]             : G13       : output : 2.5 V             :         : 8A        : N              
+hash_output[173]             : G14       : output : 2.5 V             :         : 8A        : N              
+hash_output[134]             : G15       : output : 2.5 V             :         : 8A        : N              
+VREFB8AN0                    : G16       : power  :                   :         : 8A        :                
+GND                          : G17       : gnd    :                   :         :           :                
+update                       : G18       : input  : 2.5 V             :         : 8A        : N              
+VREFB7AN0                    : G19       : power  :                   :         : 7A        :                
+hash_output[58]              : G20       : output : 2.5 V             :         : 7A        : N              
+hash_output[103]             : G21       : output : 2.5 V             :         : 7A        : N              
+VCCIO7A                      : G22       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 7A        :                
+GND                          : G27       : gnd    :                   :         :           :                
+debug_port[6]                : G28       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G29       :        :                   :         : 7A        :                
+debug_port[28]               : G30       : output : 2.5 V             :         : 6A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G31       :        :                   :         : 6A        :                
+VCCIO6A                      : G32       : power  :                   : 2.5V    : 6A        :                
+hash_output[34]              : G33       : output : 2.5 V             :         : 6A        : N              
+hash_output[153]             : G34       : output : 2.5 V             :         : 6A        : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : B3L       :                
+GXB_NC                       : H4        :        :                   :         : B3L       :                
+GND                          : H5        : gnd    :                   :         :           :                
+NC                           : H6        :        :                   :         :           :                
+MSEL4                        : H7        :        :                   :         : 9A        :                
+GND                          : H8        :        :                   :         : 9A        :                
+VCCBAT                       : H9        : power  :                   : 1.2V    :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCPGM                       : H11       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+hash_output[230]             : H12       : output : 2.5 V             :         : 8A        : N              
+hash_output[218]             : H13       : output : 2.5 V             :         : 8A        : N              
+hash_output[102]             : H14       : output : 2.5 V             :         : 8A        : N              
+VCCIO8A                      : H15       : power  :                   : 2.5V    : 8A        :                
+hash_output[1]               : H16       : output : 2.5 V             :         : 8A        : N              
+hash_output[54]              : H17       : output : 2.5 V             :         : 8A        : N              
+hash_output[4]               : H18       : output : 2.5 V             :         : 7A        : N              
+hash_output[61]              : H19       : output : 2.5 V             :         : 7A        : N              
+GND                          : H20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H21       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H23       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H24       :        :                   :         : 7A        :                
+VCCIO7A                      : H25       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H26       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H27       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H28       :        :                   :         : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H29       :        :                   :         : 6A        :                
+GND                          : H30       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H31       :        :                   :         : 6A        :                
+hash_output[0]               : H32       : output : 2.5 V             :         : 6A        : N              
+hash_output[183]             : H33       : output : 2.5 V             :         : 6A        : N              
+hash_output[185]             : H34       : output : 2.5 V             :         : 6A        : N              
+GND                          : J1        :        :                   :         : B3L       :                
+GND                          : J2        :        :                   :         : B3L       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+NC                           : J6        :        :                   :         :           :                
+NC                           : J7        :        :                   :         :           :                
+NC                           : J8        :        :                   :         :           :                
+NC                           : J9        :        :                   :         :           :                
+VCC_AUX                      : J10       : power  :                   : 2.5V    :           :                
+MSEL1                        : J11       :        :                   :         : 9A        :                
+MSEL0                        : J12       :        :                   :         : 9A        :                
+GND                          : J13       : gnd    :                   :         :           :                
+VCCPD7A8A                    : J14       : power  :                   : 2.5V    : 7A, 8A    :                
+hash_output[165]             : J15       : output : 2.5 V             :         : 8A        : N              
+VCCPD7A8A                    : J16       : power  :                   : 2.5V    : 7A, 8A    :                
+DNU                          : J17       :        :                   :         :           :                
+VCCIO7A                      : J18       : power  :                   : 2.5V    : 7A        :                
+VCCPD7A8A                    : J19       : power  :                   : 2.5V    : 7A, 8A    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J20       :        :                   :         : 7A        :                
+VCCPD7A8A                    : J21       : power  :                   : 2.5V    : 7A, 8A    :                
+VCCPD7A8A                    : J22       : power  :                   : 2.5V    : 7A, 8A    :                
+GND                          : J23       : gnd    :                   :         :           :                
+DNU                          : J24       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J25       :        :                   :         : 7A        :                
+GND                          : J26       :        :                   :         : 7A        :                
+NC                           : J27       :        :                   :         :           :                
+VCCIO6A                      : J28       : power  :                   : 2.5V    : 6A        :                
+hash_output[138]             : J29       : output : 2.5 V             :         : 6A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J30       :        :                   :         : 6A        :                
+debug_port[2]                : J31       : output : 2.5 V             :         : 6A        : N              
+hash_output[158]             : J32       : output : 2.5 V             :         : 6A        : N              
+GND                          : J33       : gnd    :                   :         :           :                
+hash_output[7]               : J34       : output : 2.5 V             :         : 6A        : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : B3L       :                
+GXB_NC                       : K4        :        :                   :         : B3L       :                
+GND                          : K5        : gnd    :                   :         :           :                
+GND                          : K6        : gnd    :                   :         :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+NC                           : K9        :        :                   :         :           :                
+MSEL3                        : K10       :        :                   :         : 9A        :                
+VCCIO8A                      : K11       : power  :                   : 2.5V    : 8A        :                
+hash_output[148]             : K12       : output : 2.5 V             :         : 8A        : N              
+hash_output[217]             : K13       : output : 2.5 V             :         : 8A        : N              
+hash_output[100]             : K14       : output : 2.5 V             :         : 8A        : N              
+VCCPD7A8A                    : K15       : power  :                   : 2.5V    : 7A, 8A    :                
+GND                          : K16       : gnd    :                   :         :           :                
+VCCPD7A8A                    : K17       : power  :                   : 2.5V    : 7A, 8A    :                
+VCC_AUX                      : K18       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K19       :        :                   :         : 7A        :                
+VCCPD7A8A                    : K20       : power  :                   : 2.5V    : 7A, 8A    :                
+VCCIO7A                      : K21       : power  :                   : 2.5V    : 7A        :                
+hash_output[228]             : K22       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K23       :        :                   :         : 7A        :                
+VCC_AUX                      : K24       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 7A        :                
+GND                          : K26       : gnd    :                   :         :           :                
+NC                           : K27       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K28       :        :                   :         : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K29       :        :                   :         : 6A        :                
+hash_output[155]             : K30       : output : 2.5 V             :         : 6A        : N              
+VCCIO6A                      : K31       : power  :                   : 2.5V    : 6A        :                
+hash_output[97]              : K32       : output : 2.5 V             :         : 6A        : N              
+hash_output[70]              : K33       : output : 2.5 V             :         : 6A        : N              
+hash_output[40]              : K34       : output : 2.5 V             :         : 6A        : N              
+GND                          : L1        :        :                   :         : B3L       :                
+GND                          : L2        :        :                   :         : B3L       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+GND                          : L5        : gnd    :                   :         :           :                
+GND                          : L6        : gnd    :                   :         :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+GND                          : L8        : gnd    :                   :         :           :                
+GND                          : L9        : gnd    :                   :         :           :                
+NC                           : L10       :        :                   :         :           :                
+hash_output[151]             : L11       : output : 2.5 V             :         : 8A        : N              
+hash_output[181]             : L12       : output : 2.5 V             :         : 8A        : N              
+hash_output[216]             : L13       : output : 2.5 V             :         : 8A        : N              
+GND                          : L14       : gnd    :                   :         :           :                
+hash_output[166]             : L15       : output : 2.5 V             :         : 8A        : N              
+hash_output[91]              : L16       : output : 2.5 V             :         : 8A        : N              
+hash_output[21]              : L17       : output : 2.5 V             :         : 8A        : N              
+hash_output[52]              : L18       : output : 2.5 V             :         : 7A        : N              
+GND                          : L19       : gnd    :                   :         :           :                
+hash_output[123]             : L20       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L21       :        :                   :         : 7A        :                
+hash_output[116]             : L22       : output : 2.5 V             :         : 7A        : N              
+hash_output[107]             : L23       : output : 2.5 V             :         : 7A        : N              
+GND                          : L24       : gnd    :                   :         :           :                
+debug_port[20]               : L25       : output : 2.5 V             :         : 7A        : N              
+NC                           : L26       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L27       :        :                   :         : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L28       :        :                   :         : 6A        :                
+GND                          : L29       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L30       :        :                   :         : 6A        :                
+hash_output[28]              : L31       : output : 2.5 V             :         : 6A        : N              
+hash_output[10]              : L32       : output : 2.5 V             :         : 6A        : N              
+hash_output[43]              : L33       : output : 2.5 V             :         : 6A        : N              
+GND                          : L34       : gnd    :                   :         :           :                
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : B2L       :                
+GXB_NC                       : M4        :        :                   :         : B2L       :                
+GND                          : M5        : gnd    :                   :         :           :                
+GND                          : M6        : gnd    :                   :         :           :                
+GND                          : M7        : gnd    :                   :         :           :                
+VCCE_GXBL                    : M8        : power  :                   : 1.1V    :           :                
+GND                          : M9        : gnd    :                   :         :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+VCCA_FPLL                    : M11       : power  :                   : 2.5V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+hash_output[200]             : M13       : output : 2.5 V             :         : 8A        : N              
+hash_output[137]             : M14       : output : 2.5 V             :         : 8A        : N              
+hash_output[176]             : M15       : output : 2.5 V             :         : 8A        : N              
+hash_output[22]              : M16       : output : 2.5 V             :         : 8A        : N              
+GND                          : M17       : gnd    :                   :         :           :                
+hash_output[94]              : M18       : output : 2.5 V             :         : 7A        : N              
+hash_output[125]             : M19       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M20       :        :                   :         : 7A        :                
+debug_port[14]               : M21       : output : 2.5 V             :         : 7A        : N              
+GND                          : M22       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M23       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M24       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M25       :        :                   :         : 7A        :                
+VCCA_FPLL                    : M26       : power  :                   : 2.5V    :           :                
+VCCIO6A                      : M27       : power  :                   : 2.5V    : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M28       :        :                   :         : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M29       :        :                   :         : 6A        :                
+hash_output[121]             : M30       : output : 2.5 V             :         : 6A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M31       :        :                   :         : 6A        :                
+GND                          : M32       : gnd    :                   :         :           :                
+hash_output[211]             : M33       : output : 2.5 V             :         : 6A        : N              
+hash_output[141]             : M34       : output : 2.5 V             :         : 6A        : N              
+GND                          : N1        :        :                   :         : B2L       :                
+GND                          : N2        :        :                   :         : B2L       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+GND                          : N5        : gnd    :                   :         :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCL_GXBL                    : N7        : power  :                   : 1.1V    :           :                
+GND                          : N8        : gnd    :                   :         :           :                
+VCCH_GXBL                    : N9        : power  :                   : 2.5V    :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+hash_output[143]             : N12       : output : 2.5 V             :         : 8A        : N              
+hash_output[188]             : N13       : output : 2.5 V             :         : 8A        : N              
+hash_output[113]             : N14       : output : 2.5 V             :         : 8A        : N              
+VCC                          : N15       : power  :                   : 1.1V    :           :                
+GND                          : N16       : gnd    :                   :         :           :                
+VCC                          : N17       : power  :                   : 1.1V    :           :                
+GND                          : N18       : gnd    :                   :         :           :                
+VCC                          : N19       : power  :                   : 1.1V    :           :                
+GND                          : N20       : gnd    :                   :         :           :                
+VCC                          : N21       : power  :                   : 1.1V    :           :                
+hash_output[135]             : N22       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N23       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N24       :        :                   :         : 7A        :                
+GND                          : N25       : gnd    :                   :         :           :                
+VCCPD6A                      : N26       : power  :                   : 2.5V    : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N27       :        :                   :         : 6A        :                
+debug_port[29]               : N28       : output : 2.5 V             :         : 6A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N29       :        :                   :         : 6A        :                
+VCCIO6A                      : N30       : power  :                   : 2.5V    : 6A        :                
+hash_output[115]             : N31       : output : 2.5 V             :         : 6A        : N              
+hash_output[73]              : N32       : output : 2.5 V             :         : 6A        : N              
+hash_output[14]              : N33       : output : 2.5 V             :         : 6A        : N              
+word_input[14]               : N34       : input  : 2.5 V             :         : 6A        : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : B2L       :                
+GXB_NC                       : P4        :        :                   :         : B2L       :                
+GND                          : P5        : gnd    :                   :         :           :                
+GND                          : P6        : gnd    :                   :         :           :                
+GND                          : P7        : gnd    :                   :         :           :                
+VCCE_GXBL                    : P8        : power  :                   : 1.1V    :           :                
+GND                          : P9        : gnd    :                   :         :           :                
+GND                          : P10       :        :                   :         : B3L       :                
+GND                          : P11       : gnd    :                   :         :           :                
+VCC                          : P12       : power  :                   : 1.1V    :           :                
+GND                          : P13       : gnd    :                   :         :           :                
+hash_output[201]             : P14       : output : 2.5 V             :         : 8A        : N              
+GND                          : P15       : gnd    :                   :         :           :                
+VCC                          : P16       : power  :                   : 1.1V    :           :                
+GND                          : P17       : gnd    :                   :         :           :                
+VCC                          : P18       : power  :                   : 1.1V    :           :                
+GND                          : P19       : gnd    :                   :         :           :                
+VCC                          : P20       : power  :                   : 1.1V    :           :                
+GND                          : P21       : gnd    :                   :         :           :                
+VCC                          : P22       : power  :                   : 1.1V    :           :                
+VCCIO6A                      : P23       : power  :                   : 2.5V    : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P24       :        :                   :         : 6A        :                
+debug_port[19]               : P25       : output : 2.5 V             :         : 6A        : N              
+VCCPD6A                      : P26       : power  :                   : 2.5V    : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P27       :        :                   :         : 6A        :                
+GND                          : P28       : gnd    :                   :         :           :                
+VREFB6AN0                    : P29       : power  :                   :         : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P30       :        :                   :         : 6A        :                
+hash_output[146]             : P31       : output : 2.5 V             :         : 6A        : N              
+hash_output[190]             : P32       : output : 2.5 V             :         : 6A        : N              
+VCCIO6A                      : P33       : power  :                   : 2.5V    : 6A        :                
+hash_output[229]             : P34       : output : 2.5 V             :         : 6A        : N              
+GND                          : R1        :        :                   :         : B2L       :                
+GND                          : R2        :        :                   :         : B2L       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+GND                          : R6        : gnd    :                   :         :           :                
+VCCL_GXBL                    : R7        : power  :                   : 1.1V    :           :                
+GND                          : R8        : gnd    :                   :         :           :                
+VCCE_GXBL                    : R9        : power  :                   : 1.1V    :           :                
+GND                          : R10       : gnd    :                   :         :           :                
+GND                          : R11       :        :                   :         : B3L       :                
+GND                          : R12       : gnd    :                   :         :           :                
+VCC                          : R13       : power  :                   : 1.1V    :           :                
+GND                          : R14       : gnd    :                   :         :           :                
+VCC                          : R15       : power  :                   : 1.1V    :           :                
+GND                          : R16       : gnd    :                   :         :           :                
+VCC                          : R17       : power  :                   : 1.1V    :           :                
+GND                          : R18       : gnd    :                   :         :           :                
+VCC                          : R19       : power  :                   : 1.1V    :           :                
+GND                          : R20       : gnd    :                   :         :           :                
+VCC                          : R21       : power  :                   : 1.1V    :           :                
+GND                          : R22       : gnd    :                   :         :           :                
+hash_output[180]             : R23       : output : 2.5 V             :         : 6A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R24       :        :                   :         : 6A        :                
+hash_output[35]              : R25       : output : 2.5 V             :         : 6A        : N              
+VCCIO6A                      : R26       : power  :                   : 2.5V    : 6A        :                
+hash_output[68]              : R27       : output : 2.5 V             :         : 6A        : N              
+hash_output[93]              : R28       : output : 2.5 V             :         : 6A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R29       :        :                   :         : 6A        :                
+hash_output[15]              : R30       : output : 2.5 V             :         : 6A        : N              
+GND                          : R31       : gnd    :                   :         :           :                
+hash_output[81]              : R32       : output : 2.5 V             :         : 6A        : N              
+hash_output[75]              : R33       : output : 2.5 V             :         : 6A        : N              
+hash_output[37]              : R34       : output : 2.5 V             :         : 6A        : N              
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : B2L       :                
+GXB_NC                       : T4        :        :                   :         : B2L       :                
+GND                          : T5        : gnd    :                   :         :           :                
+GND                          : T6        : gnd    :                   :         :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCH_GXBL                    : T8        : power  :                   : 2.5V    :           :                
+GND                          : T9        : gnd    :                   :         :           :                
+GND                          : T10       :        :                   :         : B2L       :                
+GND                          : T11       : gnd    :                   :         :           :                
+VCC                          : T12       : power  :                   : 1.1V    :           :                
+GND                          : T13       : gnd    :                   :         :           :                
+VCC                          : T14       : power  :                   : 1.1V    :           :                
+GND                          : T15       : gnd    :                   :         :           :                
+VCC                          : T16       : power  :                   : 1.1V    :           :                
+GND                          : T17       : gnd    :                   :         :           :                
+VCC                          : T18       : power  :                   : 1.1V    :           :                
+GND                          : T19       : gnd    :                   :         :           :                
+VCC                          : T20       : power  :                   : 1.1V    :           :                
+GND                          : T21       : gnd    :                   :         :           :                
+VCC                          : T22       : power  :                   : 1.1V    :           :                
+hash_output[189]             : T23       : output : 2.5 V             :         : 6A        : N              
+GND                          : T24       : gnd    :                   :         :           :                
+hash_output[209]             : T25       : output : 2.5 V             :         : 6A        : N              
+VCCPD6A                      : T26       : power  :                   : 2.5V    : 6A        :                
+hash_output[30]              : T27       : output : 2.5 V             :         : 6A        : N              
+hash_output[66]              : T28       : output : 2.5 V             :         : 6A        : N              
+VCCIO6A                      : T29       : power  :                   : 2.5V    : 6A        :                
+word_input[15]               : T30       : input  : 2.5 V             :         : 6A        : N              
+hash_output[221]             : T31       : output : 2.5 V             :         : 6A        : N              
+hash_output[157]             : T32       : output : 2.5 V             :         : 6A        : N              
+hash_output[127]             : T33       : output : 2.5 V             :         : 6A        : N              
+GND                          : T34       : gnd    :                   :         :           :                
+GND                          : U1        :        :                   :         : B2L       :                
+GND                          : U2        :        :                   :         : B2L       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+GND                          : U6        : gnd    :                   :         :           :                
+VCCL_GXBL                    : U7        : power  :                   : 1.1V    :           :                
+GND                          : U8        : gnd    :                   :         :           :                
+VCCE_GXBL                    : U9        : power  :                   : 1.1V    :           :                
+GND                          : U10       : gnd    :                   :         :           :                
+GND                          : U11       :        :                   :         : B2L       :                
+GND                          : U12       : gnd    :                   :         :           :                
+VCC                          : U13       : power  :                   : 1.1V    :           :                
+GND                          : U14       : gnd    :                   :         :           :                
+VCC                          : U15       : power  :                   : 1.1V    :           :                
+GND                          : U16       : gnd    :                   :         :           :                
+VCC                          : U17       : power  :                   : 1.1V    :           :                
+GND                          : U18       : gnd    :                   :         :           :                
+VCC                          : U19       : power  :                   : 1.1V    :           :                
+GND                          : U20       : gnd    :                   :         :           :                
+VCC                          : U21       : power  :                   : 1.1V    :           :                
+GND                          : U22       : gnd    :                   :         :           :                
+hash_output[17]              : U23       : output : 2.5 V             :         : 6A        : N              
+hash_output[242]             : U24       : output : 2.5 V             :         : 6A        : N              
+hash_output[226]             : U25       : output : 2.5 V             :         : 6A        : N              
+VCCPD6A                      : U26       : power  :                   : 2.5V    : 6A        :                
+GND                          : U27       : gnd    :                   :         :           :                
+hash_output[244]             : U28       : output : 2.5 V             :         : 6A        : N              
+word_input[0]                : U29       : input  : 2.5 V             :         : 6A        : N              
+word_input[22]               : U30       : input  : 2.5 V             :         : 6A        : N              
+word_input[12]               : U31       : input  : 2.5 V             :         : 6A        : N              
+VCCIO6A                      : U32       : power  :                   : 2.5V    : 6A        :                
+word_input[25]               : U33       : input  : 2.5 V             :         : 6A        : N              
+hash_output[20]              : U34       : output : 2.5 V             :         : 6A        : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : B1L       :                
+GXB_NC                       : V4        :        :                   :         : B1L       :                
+GND                          : V5        : gnd    :                   :         :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+GND                          : V7        : gnd    :                   :         :           :                
+VCCE_GXBL                    : V8        : power  :                   : 1.1V    :           :                
+GND                          : V9        : gnd    :                   :         :           :                
+GND                          : V10       :        :                   :         : B1L       :                
+GND                          : V11       : gnd    :                   :         :           :                
+VCC                          : V12       : power  :                   : 1.1V    :           :                
+GND                          : V13       : gnd    :                   :         :           :                
+VCC                          : V14       : power  :                   : 1.1V    :           :                
+GND                          : V15       : gnd    :                   :         :           :                
+VCC                          : V16       : power  :                   : 1.1V    :           :                
+GND                          : V17       : gnd    :                   :         :           :                
+VCC                          : V18       : power  :                   : 1.1V    :           :                
+GND                          : V19       : gnd    :                   :         :           :                
+VCC                          : V20       : power  :                   : 1.1V    :           :                
+GND                          : V21       : gnd    :                   :         :           :                
+VCC                          : V22       : power  :                   : 1.1V    :           :                
+hash_output[154]             : V23       : output : 2.5 V             :         : 5B        : N              
+word_input[6]                : V24       : input  : 2.5 V             :         : 5B        : N              
+VCCIO5B                      : V25       : power  :                   : 2.5V    : 5B        :                
+VCCPD5B                      : V26       : power  :                   : 2.5V    : 5B        :                
+reset                        : V27       : input  : 2.5 V             :         : 5B        : N              
+word_input[28]               : V28       : input  : 2.5 V             :         : 5B        : N              
+VREFB5BN0                    : V29       : power  :                   :         : 5B        :                
+GND                          : V30       : gnd    :                   :         :           :                
+hash_output[205]             : V31       : output : 2.5 V             :         : 5B        : N              
+hash_output[56]              : V32       : output : 2.5 V             :         : 5B        : N              
+hash_output[232]             : V33       : output : 2.5 V             :         : 6A        : N              
+hash_output[254]             : V34       : output : 2.5 V             :         : 6A        : N              
+GND                          : W1        :        :                   :         : B1L       :                
+GND                          : W2        :        :                   :         : B1L       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCL_GXBL                    : W7        : power  :                   : 1.1V    :           :                
+GND                          : W8        : gnd    :                   :         :           :                
+VCCH_GXBL                    : W9        : power  :                   : 2.5V    :           :                
+GND                          : W10       : gnd    :                   :         :           :                
+GND                          : W11       :        :                   :         : B1L       :                
+GND                          : W12       : gnd    :                   :         :           :                
+VCC                          : W13       : power  :                   : 1.1V    :           :                
+GND                          : W14       : gnd    :                   :         :           :                
+VCC                          : W15       : power  :                   : 1.1V    :           :                
+GND                          : W16       : gnd    :                   :         :           :                
+VCC                          : W17       : power  :                   : 1.1V    :           :                
+GND                          : W18       : gnd    :                   :         :           :                
+VCC                          : W19       : power  :                   : 1.1V    :           :                
+GND                          : W20       : gnd    :                   :         :           :                
+VCC                          : W21       : power  :                   : 1.1V    :           :                
+GND                          : W22       : gnd    :                   :         :           :                
+GND                          : W23       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W24       :        :                   :         : 5A        :                
+VCCPD5B                      : W25       : power  :                   : 2.5V    : 5B        :                
+hash_output[59]              : W26       : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W27       :        :                   :         : 5B        :                
+VCCIO5B                      : W28       : power  :                   : 2.5V    : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W29       :        :                   :         : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W30       :        :                   :         : 5B        :                
+word_input[31]               : W31       : input  : 2.5 V             :         : 5B        : N              
+word_input[3]                : W32       : input  : 2.5 V             :         : 5B        : N              
+GND                          : W33       : gnd    :                   :         :           :                
+hash_output[251]             : W34       : output : 2.5 V             :         : 6A        : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : B1L       :                
+GXB_NC                       : Y4        :        :                   :         : B1L       :                
+GND                          : Y5        : gnd    :                   :         :           :                
+GND                          : Y6        : gnd    :                   :         :           :                
+GND                          : Y7        : gnd    :                   :         :           :                
+VCCE_GXBL                    : Y8        : power  :                   : 1.1V    :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+GND                          : Y11       : gnd    :                   :         :           :                
+VCC                          : Y12       : power  :                   : 1.1V    :           :                
+GND                          : Y13       : gnd    :                   :         :           :                
+VCC                          : Y14       : power  :                   : 1.1V    :           :                
+GND                          : Y15       : gnd    :                   :         :           :                
+VCC                          : Y16       : power  :                   : 1.1V    :           :                
+GND                          : Y17       : gnd    :                   :         :           :                
+VCC                          : Y18       : power  :                   : 1.1V    :           :                
+GND                          : Y19       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y20       :        :                   :         : 4A        :                
+GND                          : Y21       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y22       :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y24       :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y25       :        :                   :         : 5A        :                
+VCCIO5A                      : Y26       : power  :                   : 2.5V    : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y27       :        :                   :         : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y28       :        :                   :         : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y29       :        :                   :         : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y30       :        :                   :         : 5B        :                
+VCCIO5B                      : Y31       : power  :                   : 2.5V    : 5B        :                
+hash_output[88]              : Y32       : output : 2.5 V             :         : 5B        : N              
+hash_output[156]             : Y33       : output : 2.5 V             :         : 6A        : N              
+hash_output[44]              : Y34       : output : 2.5 V             :         : 6A        : N              
